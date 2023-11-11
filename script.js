@@ -22,3 +22,19 @@ let turn = true;
 let redScore = 12;
 let blackScore = 12;
 let playerPieces;
+
+// Selected piece properties
+
+let selectedPiece = {
+    pieceID: -1,
+    indexBoardPiece: 1,
+    isKing: false,
+    spaceSeven: false,
+    spaceNine: false,
+    spaceFourteen: false,
+    spaceEighteen: false,
+    minusSpaceSeven: false,
+    minusSpaceNine: false,
+    minusSpaceFourteen: false,
+    minusSpaceEighteen: false, 
+}
