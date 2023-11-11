@@ -82,3 +82,19 @@ function resetBorders() {
     resetSelectedPieceProperties();
     getSelectedPiece();
 }
+
+// Reset selected piece properties
+
+function resetSelectedPieceProperties() {
+    selectedPiece.pieceID = -1;
+    selectedPiece.pieceID = -1;
+    selectedPiece.isKing = false;
+    selectedPiece.spaceSeven = false;
+    selectedPiece.spaceNine = false;
+    selectedPiece.spaceFourteen = false;
+    selectedPiece.spaceEighteen = false;
+    selectedPiece.minusSpaceNine = false;
+    selectedPiece.minusSpaceSeven = false;
+    selectedPiece.minusSpaceFourteen = false;
+    selectedPiece.minusSpaceEighteen = false;
+}
