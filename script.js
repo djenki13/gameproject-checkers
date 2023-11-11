@@ -98,3 +98,11 @@ function resetSelectedPieceProperties() {
     selectedPiece.minusSpaceFourteen = false;
     selectedPiece.minusSpaceEighteen = false;
 }
+
+// Get ID and index of board cell
+
+function getSelectedPiece() {
+    selectedPiece.pieceID = parseInt(event.target.ID);
+    selectedPiece.indexBoardPiece = findPiece(selectedPiece.pieceID);
+    isPieceKing();
+}
