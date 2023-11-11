@@ -64,3 +64,11 @@ function getPlayerPieces() {
     removeCellonclick();
     resetBorders();
 }
+
+// Remove moves from old selected piece
+
+function removeCellsonClick () {
+    for (let i=0; i < cells.length; i++) {
+        cells[i].removeAttribute("onClick");
+    }
+}
