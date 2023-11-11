@@ -16,3 +16,9 @@ const redTurnText = document.querySelectorAll(".redTurnText");
 const blackTurnText = document.querySelectorAll(".blackTurnText");
 const divider = document.querySelector("#divider");
 
+// Player properties
+
+let turn = true;
+let redScore = 12;
+let blackScore = 12;
+let playerPieces;
