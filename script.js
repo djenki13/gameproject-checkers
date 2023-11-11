@@ -65,10 +65,20 @@ function getPlayerPieces() {
     resetBorders();
 }
 
-// Remove moves from old selected piece
+// Remove moves from last selected piece
 
 function removeCellsonClick () {
     for (let i=0; i < cells.length; i++) {
         cells[i].removeAttribute("onClick");
     }
+}
+
+// Reset borders
+
+function resetBorders() {
+    for (let i=0; i < playerPieces.length; i++) {
+        playerPieces[i].style.border = "1px solid white";
+    }
+    resetSelectedPieceProperties();
+    getSelectedPiece();
 }
