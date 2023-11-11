@@ -52,3 +52,15 @@ function pieceEventListeners() {
         }
     }
 }
+
+// Players' piece count
+
+function getPlayerPieces() {
+    if (turn) {
+        playerPieces = redPieces;
+    } else {
+        playerPieces = blackPieces;
+    }
+    removeCellonclick();
+    resetBorders();
+}
