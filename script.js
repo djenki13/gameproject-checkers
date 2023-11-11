@@ -38,3 +38,17 @@ let selectedPiece = {
     minusSpaceFourteen: false,
     minusSpaceEighteen: false, 
 }
+
+// Event listeners
+
+function pieceEventListeners() {
+    if (turn) {
+        for (let i = 0; i < redPieces.length; i++) {
+            redPieces[i].addEventListener("click", getPlayerPieces);
+        }
+    } else {
+        for (let i = 0; i < blackPieces.length; i++) {
+            blackPieces[i].addEventListener("click", getPlayerPieces)
+        }
+    }
+}
