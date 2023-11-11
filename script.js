@@ -106,3 +106,14 @@ function getSelectedPiece() {
     selectedPiece.indexBoardPiece = findPiece(selectedPiece.pieceID);
     isPieceKing();
 }
+
+// Is piece a king?
+
+function isPieceKing() {
+    if (document.getElementById(selectedPiece.pieceID).classList.contains("king")) {
+        selectedPiece.isKing = true;
+    } else {
+        selectedPiece.isKing = false;
+    }
+    getAvailableSpaces();
+}
