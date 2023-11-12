@@ -133,4 +133,8 @@ function getAvailableSpaces() {
         cells[selectedPiece.indexBoardPiece-7].classList.contains("emptySpace") !== true) {
             selectedPiece.minusSpaceSeven = true;
         }
+    if (board[selectedPiece.indexBoardPiece-9] === null &&
+        cells[selectedPiece.indexBoardPiece-9].classList.contains("emptySpace") !== true) {
+            selectedPiece.minusSpaceNine = true;
+        }
 }
