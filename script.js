@@ -272,6 +272,11 @@ function makeMove(number) {
         if (selectedPiece.isKing) {
             cells[selectedPiece.indexBoardPiece + number].innerHTML = `<p class ="black-piece king" id="${selectedPiece.pieceID}"></p>`;
             blackPieces = document.querySelectorAll("span");
+        } else {
+            if (selectedPiece.isKing) {
+                cells[selectedPiece.indexBoardPiece + number].innerHTML = `<span class= "black-piece" id="${selectedPiece.pieceID}></span>`;
+                blackPieces = document.querySelectorAll("span");
+            }
+            }
         }
     }
-}
