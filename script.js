@@ -329,3 +329,16 @@ function removeEventListeners() {
     }
     checkForWin();
 }
+
+// Check for a win
+
+function checkForWin() {
+    if (blackScore===0) {
+        divider.style.display = "none";
+        for (let i=0; i < redTurnText.length; i++) {
+            redTurnText[i].style.color = "black";
+            blackTurnText[i].style.display = "none";
+            redTurnText[i].textContent = "RED WINS!";
+        }
+    }
+}
