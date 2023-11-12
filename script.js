@@ -117,3 +117,12 @@ function isPieceKing() {
     }
     getAvailableSpaces();
 }
+
+// Allow selected piece to move
+
+function getAvailableSpaces() {
+    if (board[selectedPiece.indexBoardPiece+7] === null &&
+        cells[selectedPiece.indexBoardPiece+7].classList.contains("noPieceHere") !==true) {
+            selectedPiece.spaceSeven = true;
+        }
+}
