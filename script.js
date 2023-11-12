@@ -212,7 +212,7 @@ function checkPieceParameters() {
     }
 }
 
-// Show user piece is movable with blue highlight
+// Show user piece is movable with blue border
 
 function givePieceBorder() {
     if (selectedPiece.spaceSeven || selectedPiece.spaceNine || selectedPiece.spaceFourteen || selectedPiece.spaceEighteen
