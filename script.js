@@ -299,5 +299,11 @@ function changeData(indexBoardPiece,modifiedIndex,removePiece) {
     if (turn === false && selectedPiece.pieceID >= 12 && modifiedIndex <= 7) {
         document.getElementById(selectedPiece.pieceID).classList.add("king");
     }
-    
+    if (removePiece) {
+        board[removePiece] = null;
+        if (turn && selectedPiece.pieceID < 12) {
+            cells[removePiece].innerHTML="";
+            blackScore--
+        }
+    }
 }
