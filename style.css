@@ -1,3 +1,29 @@
+* {
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile {
+    display:none;
+}
+
+.desktop {
+    margin: 0;
+    width: 100%;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -13,6 +39,26 @@ td {
     width: 75px;
     height: 75px;
     text-align: center;
+}
+
+.redTurnText {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 36px;
+}
+
+.blackTurnText {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 36px;
+}
+
+#divider {
+    font-size: 90px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .noPiece {
@@ -59,22 +105,78 @@ span {
     display: inline-block;
 }
 
-.redTurnText {
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
-    font-size: 36px;
+@media screen and (max-width:560px) {
+    .redPiece {
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+    .blackPiece {
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+    td {
+        width: 12vw;
+        height: 12vw;
+    }
+    .redTurnText {
+        font-size: 40px;
+    }
+    .blackTurnText {
+        font-size: 40px;
+    }
+    table {
+        margin: 0;
+    }
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+    .redTurnText {
+        -webkit-transform:rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    }
 }
 
-.blackTurnText {
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
-    font-size: 36px;
+@media screen and (max-width: 380px) {
+    .redPiece {
+        height: 3vw;
+        width: 3vw;
+    }
+    .blackPiece {
+        height: 3vw;
+        width: 3vw;
+    }
 }
 
-#divider {
-    font-size: 90px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+@media screen and (max-width:345px) {
+    .redPiece {
+        height: 2.5vw;
+        width: 2.5vw;
+    }
+    .blackPiece {
+        height: 2.5vw;
+        width: 2.5vw;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .redPiece {
+        height: 1.5vw;
+        width: 1.5vw;
+    }
+    .blackPiece {
+        height: 1.5vw;
+        width: 1.5vw;
+    }
+    .redTurnText {
+        font-size: 35px;
+    }
+    .blackTurnText {
+        font-size: 35px;
+    }
 }
