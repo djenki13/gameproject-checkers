@@ -314,3 +314,13 @@ function changeData(indexBoardPiece,modifiedIndex,removePiece) {
     removeCellonclick();
     removeEventListeners();
 }
+
+// Remove 'onClick' event listeners for pieces
+
+function removeEventListeners() {
+    if (turn) {
+        for (let i=0; i < redPieces.length; i++) {
+            redPieces[i].removeEventListener("click",getPlayerPieces);
+        }
+    }
+}
