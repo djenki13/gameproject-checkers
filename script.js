@@ -236,4 +236,7 @@ function giveCellsClick() {
     if (selectedPiece.spaceFourteen) {
         cells[selectedPiece.indexBoardPiece+14].setAttribute("onClick","makeMove(14)");
     }
+    if (selectedPiece.spaceEighteen) {
+        cells[selectedPiece.indexBoardPiece+18].setAttribute("onClick","makeMove(18)");
+    }
 }
