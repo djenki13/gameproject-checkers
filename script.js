@@ -287,3 +287,13 @@ function makeMove(number) {
         changeData(indexOfPiece, indexOfPiece + number);
     }
 }
+
+// Change board data on back end
+
+function changeData(indexBoardPiece,modifiedIndex,removePiece) {
+    board[indexBoardPiece] = null;
+    board[modifiedIndex] = parseInt(selectedPiece.pieceID);
+    if (turn && selectedPiece.pieceID < 12 && modifiedIndex >= 57) {
+        document.getElementById(selectedPiece.pieceID).classList.add("king")
+    }
+}
