@@ -218,8 +218,16 @@ function givePieceBorder() {
     if (selectedPiece.spaceSeven || selectedPiece.spaceNine || selectedPiece.spaceFourteen || selectedPiece.spaceEighteen
     || selectedPiece.minusSpaceSeven || selectedPiece.minusSpaceNine || selectedPiece.minusSpaceFourteen || selectedPiece.minusSpaceEighteen) {
         document.getElementById(selectedPiece.pieceID).style.border = "3px solid blue";
-        giveCellsCLick();
+        giveCellsClick();
     } else {
         return;
+    }
+}
+
+// Give cells click based on possible moves
+
+function giveCellsClick() {
+    if (selectedPiece.spaceSeven) {
+        cells[selectedPiece.indexBoardPiece+7].setAttribute("onClick","makeMove(7)");
     }
 }
