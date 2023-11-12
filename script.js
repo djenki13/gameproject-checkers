@@ -252,3 +252,12 @@ function giveCellsClick() {
         cells[selectedPiece.indexBoardPiece-18].setAttribute("onClick","makeMove(-18)");
     }
 }
+
+/* v when the cell is clicked v */
+
+// Make clicked move
+
+function makeMove(number) {
+    document.getElementById(selectedPiece.pieceID).remove();
+    cells[selectedPiece.indexBoardPiece].innerHTML = "";
+}
