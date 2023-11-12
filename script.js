@@ -139,3 +139,15 @@ function getAvailableSpaces() {
         }
     checkPossibleJumpSpaces();
 }
+
+// Selected piece jump moves
+
+function checkPossibleJumpSpaces() {
+    if (turn) {
+        if (board[selectedPiece.indexBoardPiece+14] === null
+        && cells[selectedPiece.indexBoardPiece+14].classList.contains("emptySpace") !== true
+        && board[selectedPiece.indexBoardPiece+7]>=12) {
+            selectedPiece.spaceFourteen = true;
+        }
+    }
+}
