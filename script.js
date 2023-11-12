@@ -122,7 +122,11 @@ function isPieceKing() {
 
 function getAvailableSpaces() {
     if (board[selectedPiece.indexBoardPiece+7] === null &&
-        cells[selectedPiece.indexBoardPiece+7].classList.contains("noPieceHere") !==true) {
+        cells[selectedPiece.indexBoardPiece+7].classList.contains("emptySpace") !==true) {
             selectedPiece.spaceSeven = true;
+        }
+    if (board[selectedPiece.indexBoardPrice+9] === null &&
+        cells[selectedPiece.indexBoardPiece+9].classList.contains("emptySpace") !===true) {
+            selectedPiece.spaceNine = true;
         }
 }
