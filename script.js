@@ -322,5 +322,10 @@ function removeEventListeners() {
         for (let i=0; i < redPieces.length; i++) {
             redPieces[i].removeEventListener("click",getPlayerPieces);
         }
+    } else {
+        for (let i=0; i < blackPieces.length; i++) {
+            blackPieces[i].removeEventListener("click",getPlayerPieces);
+        }
     }
+    checkForWin();
 }
