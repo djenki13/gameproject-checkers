@@ -279,9 +279,11 @@ function makeMove(number) {
             }
             }
         }
-    }
 
     let indexOfPiece = selectedPiece.indexBoardPiece
     if (number === 14 || number === -14 || number === 18 || number === -18) {
         changeData(indexOfPiece, indexOfPiece + number, indexOfPiece + number / 2);
+    } else {
+        changeData(indexOfPiece, indexOfPiece + number);
     }
+}
