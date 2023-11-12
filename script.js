@@ -350,3 +350,15 @@ function checkForWin() {
     }
     changePlayer();
 }
+
+// Switch players' turn
+
+function changePlayer() {
+    if (turn) {
+        turn = false;
+        for (let i=0; i < redTurnText.length; i++) {
+            redTurnText[i].style.color = "lightGrey";
+            blackTurnText[i].style.color = "black";
+        }
+    }
+}
