@@ -170,7 +170,11 @@ function checkPossibleJumpSpaces() {
         && board[selectedPiece.indexBoardPiece+7] < 12 && board[selectedPiece.indexBoardPiece+7] !==null) {
         selectedPiece.spaceFourteen = true;
         }
-        if (board[selectedPiece.indexBoardPiece+18])
+        if (board[selectedPiece.indexBoardPiece+18] === null
+        && cells [selectedPiece.indexBoardPiece+18].classList.contains("emptySpace") !==true
+        && board[selectedPiece.indexBoardPiece+9] <12 && board[selectedPiece.indexBoardPiece+9] !==null) {
+        selectedPiece.spaceEighteen = true;
+        }
     }
     checkPieceParameters();
 }
