@@ -190,3 +190,24 @@ function checkPossibleJumpSpaces() {
     }
     checkPieceParameters();
 }
+
+// Restrict movement for king pieces
+
+function checkPieceParameters() {
+    if (selectedPiece.isKing) {
+        givePieceBorder();
+    } else {
+        if (turn) {
+            selectedPiece.minusSpaceSeven = false;
+            selectedPiece.minusSpaceNine = false;
+            selectedPiece.minusSpaceFourteen = false;
+            selectedPiece.minusSpaceEighteen = false;
+        } else {
+            selectedPiece.spaceSeven = false;
+            selectedPiece.spaceNine = false;
+            selectedPiece.spaceFourteen = false;
+            selectedPiece.spaceEighteen = false;
+        }
+        givePieceBorder();
+    }
+}
