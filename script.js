@@ -242,4 +242,7 @@ function giveCellsClick() {
     if (selectedPiece.minusSpaceSeven) {
         cells[selectedPiece.indexBoardPiece-7].setAttribute("onClick","makemove(-7)");
     }
+    if (selectedPiece.minusSpaceNine) {
+        cells[selectedPiece.indexBoardPiece-9].setAttribute("onClick","makeMove(-9)");
+    }
 }
