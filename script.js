@@ -137,4 +137,5 @@ function getAvailableSpaces() {
         cells[selectedPiece.indexBoardPiece-9].classList.contains("emptySpace") !== true) {
             selectedPiece.minusSpaceNine = true;
         }
+    checkPossibleJumpSpaces();
 }
