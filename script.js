@@ -305,5 +305,12 @@ function changeData(indexBoardPiece,modifiedIndex,removePiece) {
             cells[removePiece].innerHTML="";
             blackScore--
         }
+        if (turn === false && selectedPiece.pieceID >= 12) {
+            cells[removePiece].innerHTML="";
+            redScore--
+        }
     }
+    resetSelectedPieceProperties();
+    removeCellonclick();
+    removeEventListeners();
 }
