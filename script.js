@@ -260,4 +260,13 @@ function giveCellsClick() {
 function makeMove(number) {
     document.getElementById(selectedPiece.pieceID).remove();
     cells[selectedPiece.indexBoardPiece].innerHTML = "";
+    if (turn) {
+        if (selectedPiece.isKing) {
+            cells[selectedPiece.indexBoardPiece + number].innerHTML = `<p class ="red-piece king" id="${selectedPiece.pieceID}"></p>`;
+            redPieces = document.querySelectorAll("p");
+        } else {
+            cells[selectedPiece.indexBoardPiece + number].innerHTML = `<p class ="red-piece" id="${selectedPiece.pieceID}"></p>`;
+            redPieces = document.querySelectorAll("p");
+        }
+    }
 }
