@@ -125,8 +125,12 @@ function getAvailableSpaces() {
         cells[selectedPiece.indexBoardPiece+7].classList.contains("emptySpace") !==true) {
             selectedPiece.spaceSeven = true;
         }
-    if (board[selectedPiece.indexBoardPrice+9] === null &&
-        cells[selectedPiece.indexBoardPiece+9].classList.contains("emptySpace") !===true) {
+    if (board[selectedPiece.indexBoardPiece+9] === null &&
+        cells[selectedPiece.indexBoardPiece+9].classList.contains("emptySpace") !==true) {
             selectedPiece.spaceNine = true;
+        }
+    if (board[selectedPiece.indexBoardPiece-7] === null &&
+        cells[selectedPiece.indexBoardPiece-7].classList.contains("emptySpace") !== true) {
+            selectedPiece.minusSpaceSeven = true;
         }
 }
