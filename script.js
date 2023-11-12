@@ -360,5 +360,14 @@ function changePlayer() {
             redTurnText[i].style.color = "lightGrey";
             blackTurnText[i].style.color = "black";
         }
+    } else {
+        turn = true;
+        for (let i=0; i < blackTurnText.length; i++) {
+            redTurnText[i].style.color = "black";
+            blackTurnText[i].style.color = "lightGrey";
+        }
     }
+    givePiecesEventListeners();
 }
+
+givePiecesEventListeners();
