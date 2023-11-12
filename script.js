@@ -175,6 +175,18 @@ function checkPossibleJumpSpaces() {
         && board[selectedPiece.indexBoardPiece+9] <12 && board[selectedPiece.indexBoardPiece+9] !==null) {
         selectedPiece.spaceEighteen = true;
         }
+        if (board[selectedPiece.indexBoardPiece-14] === null
+        && cells[selectedPiece.indexBoardPiece-14].classList.contains("emptySpace") !== true
+        && board[selectedPiece.indexBoardPiece-7] < 12
+        && board[selectedPiece.indexBoardPiece-7] !== null) {
+        selectedPiece.minusSpaceFourteen = true;
+        }
+        if (board[selectedPiece.indexBoardPiece-18] === null
+        && cells[selectedPiece.indexBoardPiece-18].classList.contains("emptySpace") !== true
+        && board[selectedPiece.indexBoardPiece-9] < 12
+        && board[selectedPiece.indexBoardPiece-9] !== null) {
+        selectedPiece.minusSpaceEighteen = true;
+        }
     }
     checkPieceParameters();
 }
