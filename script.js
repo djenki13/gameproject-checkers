@@ -211,3 +211,15 @@ function checkPieceParameters() {
         givePieceBorder();
     }
 }
+
+// Show user piece is movable with blue highlight
+
+function givePieceBorder() {
+    if (selectedPiece.spaceSeven || selectedPiece.spaceNine || selectedPiece.spaceFourteen || selectedPiece.spaceEighteen
+    || selectedPiece.minusSpaceSeven || selectedPiece.minusSpaceNine || selectedPiece.minusSpaceFourteen || selectedPiece.minusSpaceEighteen) {
+        document.getElementById(selectedPiece.pieceID).style.border = "3px solid blue";
+        giveCellsCLick();
+    } else {
+        return;
+    }
+}
