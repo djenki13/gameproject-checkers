@@ -1,3 +1,5 @@
+// Citation: Branco, Ryan (2020) [HTML, CSS, JavaScript] https://github.com/RyanBranco/Checkers
+
 /* --- Game initial data --- */
 
 const board = [
