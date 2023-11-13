@@ -27,6 +27,7 @@ div {
 body {
     display: flex;
     justify-content: center;
+    background-image: url(windowbackground.jpg);
 }
 
 table {
