@@ -13,5 +13,7 @@ Click on each checker to move it. Work to get as many kings (by getting to the e
 Screenshot:
 ![image](https://github.com/djenki13/gameproject-checkers/assets/146851409/7f35b2b8-6abf-4a54-9321-a600713b3d2d)
 <br><br>
-Credits:
-https://github.com/RyanBranco/Checkers
+Resources:<br><br>
+https://github.com/RyanBranco/Checkers<br>
+W3Schools<br>
+Snyk (code checker to verify accuracy)
