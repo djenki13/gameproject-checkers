@@ -8,6 +8,8 @@ Built on Microsoft Visual Studio with:
 <br>CSS
 <br>JavaScript
 <br><br>
+How to Play:<br><br>
+Click on each checker to move it. Work to get as many kings (by getting to the end of the other side of the board) or checkers from your opponent as possible!<br><br>
 Screenshot:
 ![image](https://github.com/djenki13/gameproject-checkers/assets/146851409/7f35b2b8-6abf-4a54-9321-a600713b3d2d)
 <br><br>
